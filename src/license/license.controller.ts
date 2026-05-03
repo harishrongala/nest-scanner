@@ -14,8 +14,6 @@ export class LicenseController {
 
   @Post('activate')
   activate(
-    deviceId: string,
-    token: string,
     @Body()
     dto: ActivateLicenseDto,
   ): DeviceResponse | null {
